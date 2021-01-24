@@ -22,5 +22,4 @@ public class SelectionSortTest {
         int lastIndex = arrayToSort.length - 1;
         Assert.assertTrue(arrayToSort[lastIndex] == 7574);
     }
-
 }

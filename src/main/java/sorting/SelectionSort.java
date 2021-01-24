@@ -16,7 +16,6 @@ public class SelectionSort {
     }
 
     private static int findMinIndex(int[] array, int fromIndex) {
-
         int min = array[fromIndex];
         int index = fromIndex;
 
