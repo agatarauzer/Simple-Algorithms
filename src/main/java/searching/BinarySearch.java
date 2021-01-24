@@ -6,16 +6,13 @@ public class BinarySearch {
         int high = array.length - 1;
         while (low <= high) {
             int mid = low + ((high - low)/2);
-            int guess = array[mid];
-            if (searched == guess) {
-                return true;
-            }
-            if (guess > searched) {
+            if (array[mid] > searched) {
                 high = mid - 1;
             }
-            else {
+            else if (array[mid] < searched) {
                 low = mid + 1;
             }
+            else return true;
         }
         return false;
     }
